@@ -1,20 +1,24 @@
 <!DOCTYPE HTML>
-<html>
-<head></head>
+<html lang="eng">
+<head>
+  <meta charset="utf8">
+  <title>D3 template haha</title>
+  <script type="text/javascript" src="d3/d3.js"></script>
+</head>
 <body>
-<h1>Haha! Got to Learn Some D3!</h1> 
-<p>Let me make a list first:</p> 
-<ul>
-<li>Row 1, say something?</li>
-<li>Nahh</li>
-<li>End of the List.</li> 
-</ul> 
-<p>It achieves this end with a patented, three-step process.</p> <ol>
+  <script type="text/javascript">
+  d3.select("body")
+  .append("p")
+  .text("New Paragraph!");
+  var arr = [5,10,15,20,25];
+  d3.csv('food.csv', function(data){
+    console.log(data);
+  });
+  </script>
 
-<li>Load in data.</li>
 
-<li>Generate a visual representation.</li>
 
-<li>Activate magic healing function.</li> </ol>
-  </body>
+
+
+</body>
 </html>
