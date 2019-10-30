@@ -7,18 +7,14 @@
 </head>
 <body>
   <script type="text/javascript">
-  d3.select("body")
-  .append("p")
-  .text("New Paragraph!");
+ 
   var dataset = [5,10,15,20,25];
-  d3.csv('food.csv', function(data){
-    console.log(data);
-  });
+  
   d3.select("body").selectAll("p")
     .data(dataset)
     .enter()
     .append("p")
-    .text(function(d){return "I am going to print myself:"+ d});
+    .text(function(d){return "I am going to print myself:"+ d;});
   </script>
 
 
