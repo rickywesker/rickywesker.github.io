@@ -6,6 +6,7 @@
   <script type="text/javascript" src="d3/d3.js"></script>
 </head>
 <body>
+  <h1>I am learning javascript and d3.</h1>
   <script type="text/javascript">
  
   var dataset = [5,10,15,20,25];
@@ -14,7 +15,15 @@
     .data(dataset)
     .enter()
     .append("p")
-    .text(function(d){return "I am going to print myself:"+ d;});
+    .text(function(d){return "I am going to print myself:"+ d;})
+    .style('color',function(d){
+      if(d > 15){
+        return "pink";
+      }
+      else{
+        return "black";
+      }
+    } );
   </script>
 
 
