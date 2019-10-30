@@ -35,7 +35,17 @@
   </script>
 <hr>
 <h1>I am going to draw sth...</h1>
-<div class="bar"></div>
+  <script>
+  var ds = [10,20,30,40,50]
+  d3.select("body").selectAll("div")
+    .data(ds)
+    .enter()
+    .append("div")
+    .attr("class","bar")
+    .style("height",function(d){
+      return d + "px";
+    });
+  </script>
 
 
 
